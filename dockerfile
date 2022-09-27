@@ -4,11 +4,8 @@ WORKDIR /usr/src/app
 
 COPY package.json ./
 
-RUN npm install
-
 ENV CI=true
-RUN npm run test
-RUN npm run build
+RUN npm install
 
 COPY . .
 
