@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 3000
 ENV CI=true
-CMD [ "node", "index.js" ]
+CMD [ "node", "index.js", "npm", "run", "start" ]
